@@ -4,8 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html src/game.html",
-    "build": "parcel build",
-    "test": "node src/js/switch-modal.js"
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "Yurii Ilkevych rufiktcl@gmail.com",

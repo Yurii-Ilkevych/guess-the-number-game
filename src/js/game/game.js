@@ -10,7 +10,7 @@ const btnExit = document.querySelector(".btnExit")
 const greetField = document.querySelector(".greet-field")
 
 btnExit.addEventListener("click", logOut);
-if(getUser() === null &&  window.location.pathname === "/game.html"){
+if(getUser() === null &&  window.location.pathname === "game.html"){
 window.location.href = "/"
 }
 function logOut(){

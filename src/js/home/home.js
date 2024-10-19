@@ -7,7 +7,7 @@ import { setFavoriteThingWord } from "../working-with-memory";
 import { failedWordNotification } from "../game/notification/notification";
 import { greetWithSuccessfullRegistrationNotification } from "../game/notification/notification";
 if(getUser() !== null &&  window.location.pathname === "/"){
- window.location.href = "/game.html"
+ window.location.href = "game.html"
  }
 
 async function getUserValue(event) {

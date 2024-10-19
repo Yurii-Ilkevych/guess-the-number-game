@@ -1,14 +1,11 @@
 import { setUser } from "../working-with-memory";
-import { swithLogIn } from "../auth/swithLogIn";
-import { getUser } from "../working-with-memory";
+import { switchPage } from "../auth/swithPage";
 import { animalOrFavoritesValidator } from "../validators/validations";
 import { checkValidSearch } from "../game/api/api-pixabey";
 import { setFavoriteThingWord } from "../working-with-memory";
 import { failedWordNotification } from "../game/notification/notification";
 import { greetWithSuccessfullRegistrationNotification } from "../game/notification/notification";
-if(getUser() !== null &&  window.location.pathname === "/"){
- window.location.href = "game.html"
- }
+ switchPage()
 
 async function getUserValue(event) {
     event.preventDefault();
@@ -29,7 +26,7 @@ async function getUserValue(event) {
     formSubmit.removeEventListener("submit", getUserValue)
     
     await greetWithSuccessfullRegistrationNotification(username.value)
-    swithLogIn(getUser());
+    switchPage()
   }
 
 

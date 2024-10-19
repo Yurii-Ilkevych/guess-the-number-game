@@ -1,0 +1,103 @@
+.backdrop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(227, 224, 224, 0.9);
+    opacity: 1;
+    transition-duration: 250ms;
+    padding-left: 120px;
+    padding-right: 120px;
+    }
+    
+    .is-hidden.backdrop{
+        pointer-events: none;
+        opacity: 0;
+        transition-duration: 500ms;
+    }
+    
+    .modal-gift{
+        background-color: white;
+        border-radius: 25px;
+        padding: 15px;
+        max-width: 450px;
+    }
+    
+    .backdrop.is-hidden .modal-gift{
+        animation-name: modalDisappearance;
+        animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    
+    .backdrop:not(.is-hidden) .modal-gift{
+        animation-name: modalAppearance;
+        animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    }
+    
+    
+    @keyframes modalDisappearance {
+        0%{
+             transform: translate(0%, 0%); 
+            scale: 1;
+        }
+        100%{
+            transform: translate(175%, 100%);
+            scale: 0.1;
+        }
+    }
+    
+    @keyframes modalAppearance {
+        0%{
+             transform: translate(-175%, -100%); 
+            scale: 0.1;
+        }
+        100%{
+            transform: translate(0%, 0%);
+            scale: 1;
+        }
+    }
+    
+    .gift-btn-clouse{
+        display: block;
+        margin-left: auto;
+        padding: 5px 10px 5px 10px;
+       background-color: rgb(236, 113, 113);
+       border-radius: 5px;
+       font-size: 24px;
+       border: 1px solid rgb(82, 0, 25);
+    }
+    
+    .gift-btn-clouse:active{
+        background-color: rgb(255, 0, 8);
+        margin-top: 3px;
+        scale: 0.9;
+    }
+
+    .txt-count-gifts{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 12px;
+    }
+
+
+
+    
+.swiper{
+    margin-top: 30px;
+}
+
+.swiper-slide.gift-slide{
+    border-radius: 15px;
+    width: 420px;
+    height: auto;
+}
+.gift-image{
+  width: 420px;
+  height: auto;  
+}

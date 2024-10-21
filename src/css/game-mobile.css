@@ -1,6 +1,6 @@
 @import "./personal-normalize.css";
 @import "./modal-gift.css";
-/* @import "./game.css"; */
+@import "./game.css";
 
 @media screen and (max-width: 767px) {
     body{

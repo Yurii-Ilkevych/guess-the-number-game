@@ -24,7 +24,7 @@
         background-color: white;
         border-radius: 25px;
         padding: 15px;
-        max-width: 450px;
+        width: 450px;
     }
     
     .backdrop.is-hidden .modal-gift{
@@ -84,9 +84,6 @@
         font-weight: 700;
         margin-top: 12px;
     }
-
-
-
     
 .swiper{
     margin-top: 30px;
@@ -94,10 +91,12 @@
 
 .swiper-slide.gift-slide{
     border-radius: 15px;
-    width: 420px;
+    max-width: 420px;
     height: auto;
+    overflow: hidden;
 }
 .gift-image{
-  width: 420px;
+    display: block;
+  max-width: 420px;
   height: auto;  
 }

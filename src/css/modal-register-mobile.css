@@ -1,0 +1,36 @@
+@import "./modal-register.css";
+
+@media screen and (max-width: 767px) {
+    .backdrop{
+        padding-left: 12px;
+        padding-right: 12px;
+        }   
+        .modal-preview{
+            padding: 15px 15px 25px 15px;
+        }
+        .preview-btn-clouse{
+            padding: 3px 8px 3px 8px;
+           font-size: 14px;
+        }
+        .preview-btn-open{
+            margin-top: 20px;
+            font-size: 14px;
+            padding: 3px 6px 3px 6px;
+        }
+        .preview-btn-open:active{
+            margin-top: 23px;
+        }
+        .modal-preview h2{
+            font-size: 16px;
+        }
+        .form-modal-prewiev{
+            row-gap: 14px;
+            margin-top: 14px;
+        }
+        .form-modal-prewiev input{
+            padding: 3px;
+        }
+        .form-modal-prewiev button{
+            padding: 3px 8px;
+        }
+}

@@ -76,7 +76,7 @@ async function delegationBtns(event) {
   if (event.currentTarget === event.target) {
     return;
   }
-
+  event.target.disabled = true;
   if(auditIntendedNumber(Number(event.target.textContent))){
     await animationClickTrue(event.target) 
    const addDisabled = await disabledButtons(allButtons)
@@ -87,7 +87,6 @@ async function delegationBtns(event) {
   }else{
     await animationClickFalse(event.target);
   }
-  event.target.disabled = true;
   saveMurcupButtons(createMurcupArray(event.target));
 }
 

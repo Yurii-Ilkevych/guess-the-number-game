@@ -3,11 +3,12 @@ body{
     background-color: blanchedalmond;
     padding-left: 120px;
     padding-right: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav{
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,11 +1,13 @@
 @import "./personal-normalize.css";
-@import "./modal-gift.css";
+@import "./modal-gift-mobile.css";
 @import "./game.css";
 
 @media screen and (max-width: 767px) {
     body{
         padding-left: 12px;
         padding-right: 12px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
     nav h1{
         font-size: 14px;
@@ -35,6 +37,9 @@
         font-size: 12px;
         column-gap: 6px;
         row-gap: 6px;
+    }
+    .btn-number {
+        padding: 4px 14px;
     }
     .play-again-btn{
         font-size: 12px;

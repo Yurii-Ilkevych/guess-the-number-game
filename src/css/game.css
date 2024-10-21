@@ -1,3 +1,9 @@
+@import "./personal-normalize.css";
+@import "./modal-gift.css";
+/* @import "./game-mobile.css"; */
+
+
+
 body{
     background-color: blanchedalmond;
     padding-left: 120px;
@@ -236,4 +242,53 @@ nav h1{
     background-color: rgb(255, 0, 8);
     margin-top: 38px;
     scale: 0.9;
+}
+@media screen and (max-width: 767px) {
+    body{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    nav h1{
+        font-size: 14px;
+    }
+    .main-tittle{
+        font-size: 14px;
+    }
+    
+    .form-play-tittle{
+        font-size: 10px;
+    }  
+    .tittle-points{
+        font-size: 14px; 
+    }
+    .txt-about-gift{
+        font-size: 12px;
+    }
+    .form-game-start{
+        font-size: 12px;
+    }
+    .form-game-start input{
+        font-size: 12px;
+        padding: 2px;
+        border: 1px solid #083100;
+    }
+    .form-play{
+        font-size: 12px;
+        column-gap: 6px;
+        row-gap: 6px;
+    }
+    .play-again-btn{
+        font-size: 12px;
+    }
+    .btn-get-a-gift{
+        font-size: 12px;
+    }
+    .btnExit{
+        font-size: 14px;
+        padding: 3px 6px 3px 6px;
+        margin-top: 15px;
+    }
+    .btnExit:active{
+        margin-top: 18px;
+    }
 }

@@ -12,7 +12,7 @@ h1{
     color: rgb(145, 82, 0);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 920px) {
     h1{
         font-size: 18px;
     }  

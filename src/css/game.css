@@ -245,6 +245,7 @@ nav h1{
 }
 @media screen and (max-width: 767px) {
     body{
+        background-color: aquamarine;
         padding-left: 12px;
         padding-right: 12px;
     }

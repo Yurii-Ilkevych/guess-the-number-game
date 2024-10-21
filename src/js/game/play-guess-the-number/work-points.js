@@ -7,7 +7,7 @@ const pointsTextContent = document.querySelector(".points-text-content")
 const pointsField = document.querySelector(".txt-about-gift-span")
 createTxtNeedPoints()
 
-if(document.location.pathname === "/game.html"){
+if(window.location.pathname.includes("game.html")){
     createTxtContentPoints()
 }
 

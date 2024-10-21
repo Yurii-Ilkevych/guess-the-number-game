@@ -1,4 +1,6 @@
 import swal from 'sweetalert';
+import { allClearlocalStorage } from '../../working-with-memory';
+import { switchPage } from '../../auth/swithPage';
 const header = document.querySelector("header")
 const backdrop = document.querySelector(".backdrop");
 export function failedWordNotification(){
@@ -29,5 +31,27 @@ export function warningNotification(sentece){
   swal({
     title: `${sentece}`,
     icon: "warning",
+  });
+}
+
+export async function sureDellAccount(){
+  swal({
+    title: "Are you sure?",
+    text: "The account will be permanently deleted!",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  })
+  .then(async (willDelete) => {
+    if (willDelete) {
+      allClearlocalStorage()
+      await swal("The account has been deleted!", {
+        icon: "success",
+      }
+    );
+    switchPage()
+    } else {
+      swal("The account was not deleted");
+    }
   });
 }

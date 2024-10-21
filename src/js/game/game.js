@@ -5,18 +5,12 @@ import "./play-guess-the-number/work-with-gift.js"
 import "./api/api-pixabey.js"
 import { switchPage } from "../auth/swithPage.js";
 import { getUser } from "../working-with-memory";
-import { allClearlocalStorage } from "../working-with-memory";
+import { sureDellAccount } from "./notification/notification.js"
 const btnExit = document.querySelector(".btnExit")
 const greetField = document.querySelector(".greet-field")
-btnExit.addEventListener("click", logOut);
+btnExit.addEventListener("click", sureDellAccount);
 
 switchPage()
-
-function logOut(){
-    btnExit.removeEventListener("click", logOut);
-    allClearlocalStorage()
-    switchPage()
-}
 greetUser()
 
 function greetUser(){

@@ -14,7 +14,7 @@ const btnGetGift = document.querySelector(".btn-get-a-gift")
 const swiperWraper = document.querySelector(".swiper-wrapper")
 const coutGiftsTxt = document.querySelector(".txt-count-gifts-number")
 
-export const COUNTPOINTS = 30
+export const COUNTPOINTS = 10
 
 async function counterGifts(){
   let counterWithMemory = getCounterGift()

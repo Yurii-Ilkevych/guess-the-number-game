@@ -11,7 +11,6 @@ import { swiper } from "./swiper-for-gift";
 const btnClouse = document.querySelector(".gift-btn-clouse");
 const backdrop = document.querySelector(".backdrop");
 const btnGetGift = document.querySelector(".btn-get-a-gift")
-const swiperWraper = document.querySelector(".swiper-wrapper")
 const coutGiftsTxt = document.querySelector(".txt-count-gifts-number")
 
 export const COUNTPOINTS = 10
@@ -82,5 +81,4 @@ function createBlockGifts(arrGift){
     const murcup = arrGift.map(el => `<div class="swiper-slide gift-slide"><img class="gift-image" src="${el.url}" alt="${el.alt}"></div>`)
     coutGiftsTxt.textContent = murcup.length
     swiper.appendSlide(murcup)
-    //swiperWraper.innerHTML =  murcup.join("")
 }
